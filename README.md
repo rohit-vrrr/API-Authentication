@@ -33,7 +33,18 @@ http://localhost:3000/auth/login
 http://localhost:3000/auth/refresh-token
 http://localhost:3000/auth/logout
 ```
-
+# Initialize
+1. Create **.env** file in the root directory and include the following:
+```
+PORT=3000
+MONGODB_URI=mongodb://localhost:27017
+DB_NAME=auth_db
+ACCESS_TOKEN_SECRET=
+REFRESH_TOKEN_SECRET=
+```
+2. **DB_NAME** is the Database name which can be given anything.
+3. **ACCESS_TOKEN_SECRET** and **REFRESH_TOKEN_SECRET** are to be generated via "Helpers/keygen.js" where **key1** and **key2** corresponds to **ACCESS_TOKEN_SECRET** and **REFRESH_TOKEN_SECRET** respectively.
+4. Copy and Paste the two keys generated in the **.env** file.
 # REST Client
 REST Client allows us to send HTTP requests and view the response in Visual Studio Code directly.<br />
 <br />
