@@ -1,25 +1,25 @@
-# SOCIAL MEDIA APP
+# Social Media App
 A mini social media application
 <br />
-# TECH USED
-## NodeJS
-## MongoDB
-## JWT
+# Tech Used
+**NodeJS**<br />
+**MongoDB**<br />
+**JWT**<br />
 <br />
-# NPM PACKAGES
-## express
-## mongoose
-## jsonwebtoken
-## @hapi/joi
-## bcrypt
-## dotenv
-## http-errors
-## morgan
-## nodemon
+# NPM Packages
+**express**<br />
+**mongoose**<br />
+**jsonwebtoken**<br />
+**@hapi/joi**<br />
+**bcrypt**<br />
+**dotenv**<br />
+**http-errors**<br />
+**morgan**<br />
+**nodemon**<br />
 <br />
-# WHY WE NEED TWO TOKENS?
+# Why We Need Two Tokens?
 - After a successful authenticatiton we send back two tokens back to the client, containing the client id as payload in the audience claim.<br />
-	1. ACCESS TOKEN (validity: 1 hour)
+	1. ACCESS TOKEN (validity: 1 hour)<br />
 	2. REFRESH TOKEN (validity: 1 year or so)<br />
 - Access tokens are used to access Protected routes.<br />
 - Refresh tokens are used to get a new pair of Access token and Refresh token.<br />
