@@ -18,13 +18,13 @@ A mini social media application
 **nodemon**<br />
 <br />
 # Why We Need Two Tokens?
-1) After a successful authenticatiton we send back two tokens back to the client, containing the client id as payload in the audience claim.<br />
+> After a successful authenticatiton we send back two tokens back to the client, containing the client id as payload in the audience claim.<br />
 	**ACCESS TOKEN (validity: 1 hour)**<br />
 	**REFRESH TOKEN (validity: 1 year or so)**<br />
-2) Access tokens are used to access Protected routes.<br />
-3) Refresh tokens are used to get a new pair of Access token and Refresh token.<br />
+> Access tokens are used to access Protected routes.<br />
+> Refresh tokens are used to get a new pair of Access token and Refresh token.<br />
 <br />
-# REST Client<br />
+# REST Client
 REST Client allows us to send HTTP requests and view the response in Visual Studio Code directly.<br />
 <br />
 # Routes
