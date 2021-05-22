@@ -20,8 +20,8 @@ A mini social media application
 
 # Why We Need Two Tokens?
 - After a successful authentication we send back two tokens back to the client, containing the client id as payload in the audience claim.
-	**1. ACCESS TOKEN (validity: 1 hour)**
-	**2. REFRESH TOKEN (validity: 1 year or so)**
+	1. **ACCESS TOKEN (validity: 1 hour)**
+	2. **REFRESH TOKEN (validity: 1 year or so)**
 - Access tokens are used to access Protected routes.
 - Refresh tokens are used to get a new pair of Access token and Refresh token.
 
@@ -37,9 +37,9 @@ http://localhost:3000/auth/logout
 # REST Client
 REST Client allows us to send HTTP requests and view the response in Visual Studio Code directly.<br />
 <br />
-Install the package **REST Client** from the VScode marketplace<br />
-Create a **rest.http** file in the root directory<br />
-<br />
+1. Install the package **REST Client** from the VScode marketplace<br />
+2. Create a **rest.http** file in the root directory<br />
+
 Within the **rest.http** to get a response from root route:
 ```
 GET http://localhost:3000
