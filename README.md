@@ -24,10 +24,10 @@ A mini social media application
 - Access tokens are used to access Protected routes.<br />
 - Refresh tokens are used to get a new pair of Access token and Refresh token.<br />
 <br />
-## REST Client
+**REST Client**<br />
 REST Client allows us to send HTTP requests and view the response in Visual Studio Code directly.<br />
 <br />
-## ROUTES
+**Routes**<br />
 ```
 http://localhost:3000
 http://localhost:3000/auth/register
