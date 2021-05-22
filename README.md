@@ -45,7 +45,7 @@ GET http://localhost:3000
 Authorization: Bearer <REFRESH_TOKEN>
 ```
 <br />
-**Register route**
+**Register route:**
 ```
 POST http://localhost:3000/auth/register
 Content-Type: application/json
@@ -53,6 +53,37 @@ Content-Type: application/json
 {
     "email": "abc_xyz@gmail.com",
     "password": "1234"
+}
+```
+<br />
+**Login route:**
+```
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "abc_xyz@gmail.com",
+    "password": "1234"
+}
+```
+<br />
+**Refresh Token route:**
+```
+POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "<REFRESH_TOKEN>"
+}
+```
+<br />
+**Logout route:**
+```
+DELETE http://localhost:3000/auth/logout
+Content-Type: application/json
+
+{
+    "refreshToken": "<REFRESH_TOKEN>"
 }
 ```
 <br />
