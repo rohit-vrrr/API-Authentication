@@ -24,9 +24,6 @@ After a successful authenticatiton we send back two tokens back to the client, c
 Access tokens are used to access Protected routes.<br />
 Refresh tokens are used to get a new pair of Access token and Refresh token.<br />
 <br />
-# REST Client
-REST Client allows us to send HTTP requests and view the response in Visual Studio Code directly.<br />
-<br />
 # Routes
 ```
 http://localhost:3000
@@ -35,3 +32,27 @@ http://localhost:3000/auth/login
 http://localhost:3000/auth/refresh-token
 http://localhost:3000/auth/logout
 ```
+<br />
+# REST Client
+REST Client allows us to send HTTP requests and view the response in Visual Studio Code directly.<br />
+<br />
+Install the package **REST Client** from the VScode marketplace<br />
+Create a **rest.http** file in the root directory<br />
+<br />
+Within the **rest.http** to get a response from root route:
+```
+GET http://localhost:3000
+Authorization: Bearer <REFRESH_TOKEN>
+```
+<br />
+**Register route**
+```
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email": "abc_xyz@gmail.com",
+    "password": "1234"
+}
+```
+<br />
