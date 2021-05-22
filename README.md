@@ -28,7 +28,7 @@ A mini social media application
 REST Client allows us to send HTTP requests and view the response in Visual Studio Code directly.<br />
 <br />
 # ROUTES
-```javascript
+```
 http://localhost:3000
 http://localhost:3000/auth/register
 http://localhost:3000/auth/login
