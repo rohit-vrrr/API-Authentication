@@ -1,6 +1,6 @@
 
-# Social Media App
-A mini social media application
+# API Authentication
+Node JS API Authentication | JWT Auth
 
 # Tech Used
 **NodeJS**<br />
